@@ -1,0 +1,153 @@
+html {
+   
+}
+body {
+    /* border: 1px solid red; */
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+#menu {
+    width: 400px;
+    background-color: #293241;
+    text-align: center;
+}
+.profile {
+    border-bottom:1px solid #EE6C4D ;
+}
+.name a {
+    display: block;
+    padding-bottom: 10px;
+}
+.foto img {
+    width: 50%;
+    border-radius: 50%;
+    border: 10px solid #3D5A80;
+}
+nav {
+    margin: 0px;
+    padding: 0px;
+    top: 20%;
+    position: sticky;
+    position: -webkit-sticky;/* safari */
+}
+nav ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+nav ul li {
+    margin-bottom: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: #E0FBFC;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #EE6C4D;
+}
+
+
+/* bagian content */
+#content section {
+    height: 100vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+#content section div {
+    width: 100%;
+}
+h1,h2{
+    padding: 0px 20px 0px 20px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 60px;
+    line-height: 100px;
+    text-transform: uppercase;
+    background-color: #E0FBFC;
+}
+h3 {
+    margin-top: 0px;
+}
+.resume {
+    color: #666;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.kolom {
+    display: flex;
+    margin-bottom: 30px;
+}
+.kiri {
+    flex-basis: 75%;
+}
+.kanan {
+    flex-basis: 25%;
+}
+
+@media screen and (max-width:991.98px){
+    #wrapper {
+        display: block;
+    }
+    #menu {
+        width: 100%;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+    .profile {
+        display: flex;
+    }
+    .profile .foto {
+        width: 40%;
+        text-align: right;
+        padding-right: 10px;
+    }
+    .foto img {
+        width: 30px;
+        margin-top: 10px;
+        border: 5px solid #3D5A80;
+    }
+    .name a {
+        width: 100%;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    nav ul {
+        width: 100%;
+        display: block;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+        text-align: center;
+    }
+    nav ul li {
+        float: none;
+        display: inline-block;
+        padding:10px;
+    }
+    #content section {
+        display: block;
+        padding-top: 100px;
+    }
+    .kolom {
+        display: block;
+    }
+    .kolom .kiri,.kolom .kanan {
+        width: 100%;
+    }
+}
+
+
+
+
